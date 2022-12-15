@@ -1,0 +1,52 @@
+<template>
+  <a-modal :width="width" :visible="visible" @cancel="handleCancel" :footer="null">
+    <template #title>
+      <span class="font18">{{ title }}</span>
+    </template>
+    <slot></slot>
+    <a-row>
+      <a-col :span="24" class="rowE">
+        <a-space>
+          <a-button @click="handleCancel">取消</a-button>
+          <a-button :loading="loading" @click="handleSubmit" type="primary">{{ okText }}</a-button>
+        </a-space>
+      </a-col>
+    </a-row>
+  </a-modal>
+</template>
+<script lang="ts">
+  export default defineComponent({
+    props: {
+      width: {
+        type: Number,
+        default: 640
+      },
+      title: {
+        type: String,
+        default: '',
+      },
+      visible: {
+        type: Boolean,
+        default: false,
+      },
+      loading: {
+        type: Boolean,
+        default: false,
+      },
+      okText: {
+        type: String,
+        default: '创建',
+      },
+    },
+    emits: ['cancel', 'ok'],
+    setup(_, { emit }) {
+      const handleCancel = () => emit('cancel');
+      const handleSubmit = () => emit('ok');
+
+      return {
+        handleCancel,
+        handleSubmit,
+      };
+    },
+  });
+</script>

@@ -1,0 +1,51 @@
+{
+  "id": "3809791",
+  "name": "HK-AIoT",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2076308",
+      "name": " 首页",
+      "font_class": "shouye",
+      "unicode": "e89f",
+      "unicode_decimal": 59551
+    },
+    {
+      "icon_id": "7550246",
+      "name": "组件",
+      "font_class": "zujian",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "10465900",
+      "name": "DEMO",
+      "font_class": "DEMO",
+      "unicode": "e7b5",
+      "unicode_decimal": 59317
+    },
+    {
+      "icon_id": "12550617",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "27253660",
+      "name": "角色权限",
+      "font_class": "jiaosequanxian",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "28415499",
+      "name": "移动",
+      "font_class": "yidong",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    }
+  ]
+}
